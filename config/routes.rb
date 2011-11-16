@@ -1,6 +1,4 @@
 SolrFlair::Application.routes.draw do
-  Blacklight.add_routes(self)
-
   root :to => "catalog#index"
 
   root :to => "catalog#index" # route to main Blacklight front-end as /browse
