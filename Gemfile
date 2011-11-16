@@ -31,3 +31,9 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug'
 
+gem 'builder'
+gem 'compass', '>= 0.12.alpha.a'
+gem 'blacklight', :path => '/Users/erikhatcher/dev/blacklight' # :git => 'git@github.com:erikhatcher/blacklight.git', :branch => 'master'
+gem 'sinatra'
+
+gem 'lucid_works', :git => 'https://github.com/lucidimagination/lucidworks-ruby', :branch => 'master'
