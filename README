@@ -1,30 +1,12 @@
 == Solr Flair
 
-=== Prism
-Clean HTTP URL / Solr request mappings through Velocity templates... 
+* Install LucidWorks, index some content
+* Run this app
+* TADA!
 
-== Known Issues
- - Prism requires JRuby 1.6.3.  It won't work on JRuby 1.6.4 or 1.6.5 - see http://jira.codehaus.org/browse/JRUBY-6164
+== Running this app
 
-== About
-
-== Script
-
-rvm use 1.8.7
-rails new solr_flair
-cd solr_flair
-# added to git repo - https://github.com/erikhatcher/solr_flair
-
-Installed Blacklight - https://github.com/projectblacklight/blacklight/wiki/Quickstart
-  * notes: using my Blacklight version, a clone of cbeer's "next" branch
-    Gemfile: gem 'blacklight', :git => 'git@github.com:erikhatcher/blacklight.git', :branch => 'next' # **** double-check this is set in final version
-    
-    
-== TODO
-
- * Pull in LucidWorks gem, create custom collection and data sources
- * Blacklight generator - catalog controller optional, or at least require name
- * refactor blacklight/catalog.rb - make it more generically named, parameterizable perhaps?
- * rails g blacklight jams in SolrMarc by default, please don't
- 
- 
+* Use jruby (rvm use jruby)
+* bundle install (required?)
+* rails server
+* http://localhost:3000
