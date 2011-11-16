@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+  <head>
+    <title>
+      Prism: $core/$handler $params
+    </title>
+  </head>
+  <body>
+    <div id="request">
+      $core/$handler $params
+      
+      Request: $request
+    </div>
+    
+    <div id="response">
+      Response: $response
+    </div>
+  </body>
+</html>

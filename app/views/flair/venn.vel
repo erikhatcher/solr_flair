@@ -1,0 +1,11 @@
+<img src="http://chart.apis.google.com/chart?chs=600x400&cht=v&chd=t:$count.a,$count.b,$count.c,$count.ab,$count.ac,$count.bc,$count.abc&chdl=$esc.url($q.a)|$esc.url($q.b)|$esc.url($q.c)"/>
+
+<ul>
+  <li>A: <a href="http://localhost:8989/collections/apachecon/search?q={!lucene}$esc.url($q.a)">$esc.html($q.a)</a> ($count.a)</li>
+  <li>B: <a href="http://localhost:8989/collections/apachecon/search?q={!lucene}$esc.url($q.b)">$esc.html($q.b)</a> ($count.b)</li>
+  <li>C: <a href="http://localhost:8989/collections/apachecon/search?q={!lucene}$esc.url($q.c)">$esc.html($q.c)</a> ($count.c)</li>
+  <li>A&B: <a href="http://localhost:8989/collections/apachecon/search?q={!lucene}$esc.url($q.ab)">$esc.html($q.ab)</a> ($count.ab)</li>
+  <li>A&C: <a href="http://localhost:8989/collections/apachecon/search?q={!lucene}$esc.url($q.ac)">$esc.html($q.ac)</a> ($count.ac)</li>
+  <li>B&C: <a href="http://localhost:8989/collections/apachecon/search?q={!lucene}$esc.url($q.bc)">$esc.html($q.bc)</a> ($count.bc)</li>
+  <li>A&B&C: <a href="http://localhost:8989/collections/apachecon/search?q={!lucene}$esc.url($q.abc)">$esc.html($q.abc)</a> ($count.abc)</li>
+</ul>

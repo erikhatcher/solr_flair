@@ -1,0 +1,17 @@
+<script type="text/javascript">
+  function generate_venn() {
+    var a=encodeURIComponent($("#a").val());
+    var b=encodeURIComponent($("#b").val());
+    var c=encodeURIComponent($("#c").val());
+    $('#venn').load('/flair/venn?a='+a+'&b='+b+'&c='+c);
+    return false;
+  }
+</script>
+<form action="#" id="compare_form" onsubmit="return generate_venn()">
+  A: <input type="text" name="a" id="a" value="ApacheCon"/>
+  B: <input type="text" name="b" id="b" value="Vancouver"/>
+  C: <input type="text" name="c" id="c" value="Solr"/>
+  <input type="submit"/>
+</form>
+
+<div id="venn"></div>
