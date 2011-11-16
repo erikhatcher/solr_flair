@@ -17,6 +17,7 @@ module SolrFlair
 
     # Custom directories with classes and modules you want to be autoloadable.
     # config.autoload_paths += %W(#{config.root}/extras)
+    config.autoload_paths += Dir["#{config.root}/lib", "#{config.root}/lib/**/"] # NOTE: Added for Prism (and eventually etc)    
 
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.
@@ -40,7 +41,12 @@ module SolrFlair
     config.filter_parameters += [:password]
 
     # Enable the asset pipeline
-    config.assets.enabled = true
+    config.assets.enabled = true    
+    # Default SASS Configuration, check out https://github.com/rails/sass-rails for details
+    config.assets.compress = !Rails.env.development?
+    config.sass.line_comments = Rails.env.development?
+
+
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
